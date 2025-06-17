@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1 - The Knight's Duty</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+      align-items: flex-start;
+    }
+
+    .text-area {
+      flex: 1 1 400px;
+    }
+
+    .text-area h1 {
+      margin-bottom: 20px;
+      color: #ffa600;
+    }
+
+    .text-area p {
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .image-area {
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .image-area img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ffa600;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #cc8400;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="text-area">
+      <h1>Lumin's decent</h1>
+      <p>
+        Lumin's decent is platformer where the player has to complete puzzles in dark, they do have a lantern to help them see but with limited vision.
+         <br><br>
+        (The project got corrupted in the attempt of getting some screenshot along side all the other projects)
+      </p>
+      <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+
+    <div class="image-area">
+      <img src="images/ldgameplay1.png" alt="Gameplay Image1" />
+      <img src="images/ldgameplay2.png" alt="Gameplay Image2" />
+    </div>
+  </div>
+
+</body>
+</html>
